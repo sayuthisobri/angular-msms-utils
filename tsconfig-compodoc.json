@@ -3,7 +3,15 @@
     "target": "ES5",
     "module": "commonjs",
     "moduleResolution": "node",
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "types": [
+      "core-js",
+      "node"
+    ],
+    "lib": [
+      "es6",
+      "dom"
+    ]
   },
   "include": [
     "src"
