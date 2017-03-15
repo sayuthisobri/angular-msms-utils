@@ -1,4 +1,4 @@
-# ng2 msms utils
+# Angular Utils
 [![Build Status](https://travis-ci.org/sayuthisobri/ng2-msms-utils.svg?branch=master)](https://travis-ci.org/sayuthisobri/ng2-msms-utils)
 [![npm version](https://badge.fury.io/js/angular-msms-utils.svg)](http://badge.fury.io/js/angular-msms-utils)
 [![GitHub issues](https://img.shields.io/github/issues/sayuthisobri/ng2-msms-utils.svg)](https://github.com/sayuthisobri/ng2-msms-utils/issues)
@@ -7,6 +7,7 @@
 ![](https://img.shields.io/badge/msms-jr-blue.svg)
 
 ## Demo
+
 [View Demo](https://sayuthisobri.github.io/ng2-msms-utils/demo/)
 
 ## Table of contents
