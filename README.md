@@ -7,7 +7,7 @@
 ![](https://img.shields.io/badge/msms-jr-blue.svg)
 
 ## Demo
-https://msms.github.io/ng2-msms-utils/demo/
+[View Demo](https://sayuthisobri.github.io/ng2-msms-utils/demo/)
 
 ## Table of contents
 
@@ -63,8 +63,7 @@ You may also find it useful to view the [demo source](https://github.com/sayuthi
 ```
 
 ## Documentation
-All documentation is auto-generated from the source via [compodoc](https://compodoc.github.io/compodoc/) and can be viewed here:
-https://msms.github.io/ng2-msms-utils/docs/
+Generated documents can be [view here](https://sayuthisobri.github.io/ng2-msms-utils/docs/)
 
 ## Development
 
