@@ -1,0 +1,13 @@
+{
+  "generator-angular-library": {
+    "githubUsername": "msms",
+    "githubRepoName": "ng2-msms-utils",
+    "npmModuleName": "angular-msms-utils",
+    "moduleGlobal": "angularMsmsUtils",
+    "ngModuleName": "MsmsUtilsModule",
+    "selectorPrefix": "msms",
+    "projectTitle": "ng2 msms utils",
+    "projectDescription": "msms",
+    "authorName": "msms"
+  }
+}
