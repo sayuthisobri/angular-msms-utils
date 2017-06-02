@@ -1,9 +1,9 @@
 # Angular Utils
 [![Build Status](https://travis-ci.org/sayuthisobri/ng2-msms-utils.svg?branch=master)](https://travis-ci.org/sayuthisobri/ng2-msms-utils)
 [![npm version](https://badge.fury.io/js/angular-msms-utils.svg)](http://badge.fury.io/js/angular-msms-utils)
-[![GitHub issues](https://img.shields.io/github/issues/sayuthisobri/ng2-msms-utils.svg)](https://github.com/sayuthisobri/ng2-msms-utils/issues)
+[![GitHub issues](https://img.shields.io/github/issues/sayuthisobri/angular-msms-utils.svg)](https://github.com/sayuthisobri/angular-msms-utils/issues)
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/sayuthisobri/ng2-msms-utils/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/sayuthisobri/angular-msms-utils/master/LICENSE)
 ![](https://img.shields.io/badge/msms-jr-blue.svg)
 
 ## Demo
