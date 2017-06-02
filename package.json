@@ -1,6 +1,6 @@
 {
   "name": "angular-msms-utils",
-  "version": "0.0.01",
+  "version": "0.0.2",
   "description": "msms",
   "main": "./bundles/angular-msms-utils.umd.js",
   "module": "./index.js",
@@ -30,26 +30,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/msms/ng2-msms-utils.git"
+    "url": "git+https://github.com/sayuthisobri/ng2-msms-utils.git"
   },
   "keywords": [
     "angular2",
-    "angular"
+    "angular",
+    "utils",
+    "msms"
   ],
   "author": "msms",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/msms/ng2-msms-utils/issues"
+    "url": "https://github.com/sayuthisobri/angular-msms-utils/issues"
   },
-  "homepage": "https://github.com/msms/ng2-msms-utils#readme",
+  "homepage": "https://github.com/sayuthisobri/angular-msms-utils#readme",
   "devDependencies": {
-    "@angular/common": "^2.1.0",
-    "@angular/compiler": "^2.1.0",
-    "@angular/compiler-cli": "^2.1.0",
-    "@angular/core": "^2.1.0",
-    "@angular/forms": "^2.4.9",
-    "@angular/platform-browser": "^2.1.0",
-    "@angular/platform-browser-dynamic": "^2.1.0",
+    "@angular/common": "^2.4.10",
+    "@angular/compiler": "^2.4.10",
+    "@angular/compiler-cli": "^2.4.10",
+    "@angular/core": "^2.4.10",
+    "@angular/forms": "^2.4.10",
+    "@angular/platform-browser": "^2.4.10",
+    "@angular/platform-browser-dynamic": "^2.4.10",
     "@types/chai": "^3.4.30",
     "@types/core-js": "^0.9.37",
     "@types/es6-shim": "^0.31.32",

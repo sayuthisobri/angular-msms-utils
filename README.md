@@ -8,13 +8,13 @@
 
 ## Demo
 
-[View Demo](https://sayuthisobri.github.io/ng2-msms-utils/demo/)
+[View Demo](http://angular-utils.msms.cf/demo/)
 
 ## Table of contents
 
 - [About](#about)
 - [Installation](#installation)
-- [Documentation](#documentation)
+- [Documentation](http://angular-utils.msms.cf/docs/)
 - [Development](#development)
 - [License](#license)
 
@@ -64,7 +64,7 @@ You may also find it useful to view the [demo source](https://github.com/sayuthi
 ```
 
 ## Documentation
-Generated documents can be [view here](https://sayuthisobri.github.io/ng2-msms-utils/docs/)
+Generated documents can be [view here](http://angular-utils.msms.cf/docs/)
 
 ## Development
 
