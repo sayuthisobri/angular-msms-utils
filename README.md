@@ -57,10 +57,14 @@ You may also find it useful to view the [demo source](https://github.com/sayuthi
 
 ### Usage without a module bundler
 ```
-<script src="node_modules/angular-msms-utils/bundles/angular-msms-utils.umd.js"></script>
-<script>
+<!--
+
+-->
+&lt;script src="node_modules/angular-msms-utils/bundles/angular-msms-utils.umd.js"&gt;
+&lt;/script&gt;
+&lt;script&gt;
     // everything is exported angularMsmsUtils namespace
-</script>
+&lt;/script&gt;
 ```
 
 ## Documentation
