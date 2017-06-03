@@ -1,5 +1,5 @@
 # Angular Utils
-[![Build Status](https://travis-ci.org/sayuthisobri/ng2-msms-utils.svg?branch=master)](https://travis-ci.org/sayuthisobri/ng2-msms-utils)
+[![Build Status](https://travis-ci.org/sayuthisobri/angular-msms-utils.svg?branch=master)](https://travis-ci.org/sayuthisobri/angular-msms-utils)
 [![npm version](https://badge.fury.io/js/angular-msms-utils.svg)](http://badge.fury.io/js/angular-msms-utils)
 [![GitHub issues](https://img.shields.io/github/issues/sayuthisobri/angular-msms-utils.svg)](https://github.com/sayuthisobri/angular-msms-utils/issues)
 
@@ -53,13 +53,10 @@ import { Component } from '@angular/core';
 export class MyComponent {}
 ```
 
-You may also find it useful to view the [demo source](https://github.com/sayuthisobri/ng2-msms-utils/blob/master/demo/demo.component.ts).
+You may also find it useful to view the [demo source](https://github.com/sayuthisobri/angular-msms-utils/blob/master/demo/demo.component.ts).
 
 ### Usage without a module bundler
-```
-<!--
-
--->
+```html
 &lt;script src="node_modules/angular-msms-utils/bundles/angular-msms-utils.umd.js"&gt;
 &lt;/script&gt;
 &lt;script&gt;
