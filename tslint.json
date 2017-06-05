@@ -7,14 +7,8 @@
     "curly": false,
     "eofline": false,
     "indent": "spaces",
-    "max-line-length": [
-      true,
-      140
-    ],
     "member-ordering": [
       true,
-      "public-before-private",
-      "static-before-instance",
       "variables-before-functions"
     ],
     "no-arg": true,
@@ -33,10 +27,6 @@
       "check-whitespace"
     ],
     "semicolon": true,
-    "triple-equals": [
-      true,
-      "allow-null-check"
-    ],
     "variable-name": false,
     "whitespace": [
       true,
@@ -47,13 +37,13 @@
       "check-type"
     ],
     "directive-selector": [
-      true,
+      false,
       "attribute",
       "msms",
       "camelCase"
     ],
     "component-selector": [
-      true,
+      false,
       "element",
       "msms",
       "kebab-case"
@@ -67,11 +57,6 @@
     "no-forward-ref": true,
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
-    "pipe-naming": [
-      true,
-      "camelCase",
-      "msms"
-    ],
     "component-class-suffix": true,
     "directive-class-suffix": true,
     "import-destructuring-spacing": true,

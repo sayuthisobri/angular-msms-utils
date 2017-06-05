@@ -1,6 +1,6 @@
 {
   "name": "angular-msms-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "msms",
   "main": "./bundles/angular-msms-utils.umd.js",
   "module": "./index.js",
@@ -30,10 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sayuthisobri/ng2-msms-utils.git"
+    "url": "git+https://github.com/sayuthisobri/angular-msms-utils.git"
   },
   "keywords": [
-    "angular2",
+    "angular2+",
     "angular",
     "utils",
     "msms"
