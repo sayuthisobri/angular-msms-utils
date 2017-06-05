@@ -67,28 +67,31 @@
                         </ul>
                     </li>
             
+            
+            
+            
+            
+            
+            
                     <li class="chapter">
                         <div class="simple">
-                            <span class="fa fa-cogs"></span>
-                            <span>Components</span>
+                            <span class="fa fa-plus"></span>
+                            <span>Pipes</span>
                             <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-components-links"
+                                    data-target="#xs-pipes-links"
                                 ></span>
                         </div>
                         <ul class="links collapse in"
-                                id="xs-components-links"
+                                id="xs-pipes-links"
                             >
                                 <li class="link">
-                                    <a href="../components/TestComponent.html" >TestComponent</a>
+                                    <a href="../pipes/MapByPipe.html" >MapByPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/OrderByPipe.html" >OrderByPipe</a>
                                 </li>
                         </ul>
                     </li>
-            
-            
-            
-            
-            
-            
             
             
             
@@ -156,28 +159,31 @@
                                </ul>
                            </li>
                    
+                   
+                   
+                   
+                   
+                   
+                   
                            <li class="chapter">
                                <div class="simple">
-                                   <span class="fa fa-cogs"></span>
-                                   <span>Components</span>
+                                   <span class="fa fa-plus"></span>
+                                   <span>Pipes</span>
                                    <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#components-links"
+                                           data-target="#pipes-links"
                    ></span>
                                </div>
                                <ul class="links collapse in"
-                                       id="components-links"
+                                       id="pipes-links"
                    >
                                        <li class="link">
-                                           <a href="../components/TestComponent.html" >TestComponent</a>
+                                           <a href="../pipes/MapByPipe.html" >MapByPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/OrderByPipe.html" >OrderByPipe</a>
                                        </li>
                                </ul>
                            </li>
-                   
-                   
-                   
-                   
-                   
-                   
                    
                    
                    
@@ -226,7 +232,10 @@
                     <h3>Declarations<a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html#!#declarations-anchor" target="_blank"><span class="fa fa-info-circle"></span></a></h3>
                     <ul class="list-group">
                             <li class="list-group-item">
-                                <a href="../components/TestComponent.html">TestComponent</a>
+                                <a href="../pipes/OrderByPipe.html">OrderByPipe</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../pipes/MapByPipe.html">MapByPipe</a>
                             </li>
                     </ul>
                 </div>
@@ -234,7 +243,10 @@
                     <h3>Exports<a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html#!#exports-anchor" target="_blank"><span class="fa fa-info-circle"></a></h3>
                     <ul class="list-group">
                             <li class="list-group-item">
-                                    <a href="../components/TestComponent.html" >TestComponent</a>
+                                    <a href="../pipes/OrderByPipe.html" >OrderByPipe</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../pipes/MapByPipe.html" >MapByPipe</a>
                             </li>
                     </ul>
                 </div>
@@ -242,20 +254,21 @@
         </div>
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre><code class="hljs javascript">import { NgModule, ModuleWithProviders } from &#x27;@angular/core&#x27;;
-import { CommonModule } from &#x27;@angular/common&#x27;;
-import { TestComponent } from &#x27;./test.component&#x27;;
+        <pre><code class="hljs javascript">import { ModuleWithProviders, NgModule } from &quot;@angular/core&quot;;
+import { CommonModule } from &quot;@angular/common&quot;;
 import { FormsModule } from &quot;@angular/forms&quot;;
+import { OrderByPipe } from &quot;./pipes/order-by.pipe&quot;;
+import { MapByPipe } from &quot;./pipes/map-by.pipe&quot;;
 
 @NgModule({
   declarations: [
-    TestComponent
+    OrderByPipe,
+    MapByPipe
   ],
   imports: [CommonModule, FormsModule],
-  exports: [TestComponent]
+  exports: [OrderByPipe, MapByPipe]
 })
 export class MsmsUtilsModule {
-
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: MsmsUtilsModule
