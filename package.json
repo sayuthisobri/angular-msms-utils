@@ -30,10 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sayuthisobri/ng2-msms-utils.git"
+    "url": "git+https://github.com/sayuthisobri/angular-msms-utils.git"
   },
   "keywords": [
-    "angular2",
+    "angular2+",
     "angular",
     "utils",
     "msms"

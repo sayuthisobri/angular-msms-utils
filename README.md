@@ -8,13 +8,13 @@
 
 ## Demo
 
-[View Demo](http://angular-utils.msms.cf/demo/)
+[View Demo](http://ng-utils.msms.work/demo/)
 
 ## Table of contents
 
 - [About](#about)
 - [Installation](#installation)
-- [Documentation](http://angular-utils.msms.cf/docs/)
+- [Documentation](http://ng-utils.msms.work/docs/)
 - [Development](#development)
 - [License](#license)
 
@@ -65,7 +65,7 @@ You may also find it useful to view the [demo source](https://github.com/sayuthi
 ```
 
 ## Documentation
-Generated documents can be [view here](http://angular-utils.msms.cf/docs/)
+Generated documents can be [view here](http://ng-utils.msms.work/docs/)
 
 ## Development
 
