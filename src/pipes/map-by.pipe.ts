@@ -14,5 +14,4 @@ export class MapByPipe implements PipeTransform {
     if (isObject(value)) value = Object.assign({}, value);
     return fn(value);
   }
-
 }
