@@ -85,10 +85,10 @@
                                 id="xs-pipes-links"
                             >
                                 <li class="link">
-                                    <a href="../pipes/FilterByPipe.html" >FilterByPipe</a>
+                                    <a href="../pipes/FilterByPipe.html"  class="active" >FilterByPipe</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../pipes/MapByPipe.html"  class="active" >MapByPipe</a>
+                                    <a href="../pipes/MapByPipe.html" >MapByPipe</a>
                                 </li>
                                 <li class="link">
                                     <a href="../pipes/OrderByPipe.html" >OrderByPipe</a>
@@ -180,10 +180,10 @@
                                        id="pipes-links"
                    >
                                        <li class="link">
-                                           <a href="../pipes/FilterByPipe.html" >FilterByPipe</a>
+                                           <a href="../pipes/FilterByPipe.html"  class="active" >FilterByPipe</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../pipes/MapByPipe.html"  class="active" >MapByPipe</a>
+                                           <a href="../pipes/MapByPipe.html" >MapByPipe</a>
                                        </li>
                                        <li class="link">
                                            <a href="../pipes/OrderByPipe.html" >OrderByPipe</a>
@@ -213,7 +213,7 @@
 
 <ol class="breadcrumb">
   <li>Pipes</li>
-  <li>MapByPipe</li>
+  <li>FilterByPipe</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -231,7 +231,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/pipes/map-by.pipe.ts</code>
+            <code>src/pipes/filter-by.pipe.ts</code>
         </p>
 
 
@@ -240,15 +240,27 @@
     <div class="tab-pane fade tab-source-code" id="source">
         <pre><code class="hljs javascript">import { Pipe, PipeTransform } from &quot;@angular/core&quot;;
 import { isArray, isFunction, isObject } from &quot;util&quot;;
-@Pipe({name: &#x27;mapBy&#x27;})
-export class MapByPipe implements PipeTransform {
-  transform(value: any, fn: (o: any) &#x3D;&gt; any): any {
-    if (!isFunction(fn))return value;
-    if (isArray(value)) {
-      return value.slice(0).map(fn);
+@Pipe({name: &#x27;filterBy&#x27;})
+export class FilterByPipe implements PipeTransform {
+  transform(value: any, fn: ((o: any) &#x3D;&gt; any) | any): any {
+
+    if (isFunction(fn)) {
+      if (isArray(value)) return value.slice(0).filter(fn);
     }
-    if (isObject(value)) value &#x3D; Object.assign({}, value);
-    return fn(value);
+    if (isObject(fn)) {
+      const map &#x3D; (o) &#x3D;&gt; {
+        let o1 &#x3D; {};
+        for (let key in fn) {
+          if (fn.hasOwnProperty(key) &amp;&amp; fn[key] &amp;&amp; o.hasOwnProperty(key)) {
+            o1[key] &#x3D; o[key];
+          }
+        }
+        return o1;
+      };
+      if (isArray(value)) return value.slice(0).map(map);
+      if (isObject(value)) return map(value);
+    }
+    return value;
   }
 }
 </code></pre>

@@ -85,6 +85,9 @@
                                 id="xs-pipes-links"
                             >
                                 <li class="link">
+                                    <a href="../pipes/FilterByPipe.html" >FilterByPipe</a>
+                                </li>
+                                <li class="link">
                                     <a href="../pipes/MapByPipe.html" >MapByPipe</a>
                                 </li>
                                 <li class="link">
@@ -177,6 +180,9 @@
                                        id="pipes-links"
                    >
                                        <li class="link">
+                                           <a href="../pipes/FilterByPipe.html" >FilterByPipe</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../pipes/MapByPipe.html" >MapByPipe</a>
                                        </li>
                                        <li class="link">
@@ -237,6 +243,9 @@
                             <li class="list-group-item">
                                 <a href="../pipes/MapByPipe.html">MapByPipe</a>
                             </li>
+                            <li class="list-group-item">
+                                <a href="../pipes/FilterByPipe.html">FilterByPipe</a>
+                            </li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
@@ -247,6 +256,9 @@
                             </li>
                             <li class="list-group-item">
                                     <a href="../pipes/MapByPipe.html" >MapByPipe</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../pipes/FilterByPipe.html" >FilterByPipe</a>
                             </li>
                     </ul>
                 </div>
@@ -259,14 +271,13 @@ import { CommonModule } from &quot;@angular/common&quot;;
 import { FormsModule } from &quot;@angular/forms&quot;;
 import { OrderByPipe } from &quot;./pipes/order-by.pipe&quot;;
 import { MapByPipe } from &quot;./pipes/map-by.pipe&quot;;
-
+import { FilterByPipe } from &quot;./pipes/filter-by.pipe&quot;;
 @NgModule({
   declarations: [
-    OrderByPipe,
-    MapByPipe
+    OrderByPipe, MapByPipe, FilterByPipe
   ],
   imports: [CommonModule, FormsModule],
-  exports: [OrderByPipe, MapByPipe]
+  exports: [OrderByPipe, MapByPipe, FilterByPipe]
 })
 export class MsmsUtilsModule {
   static forRoot(): ModuleWithProviders {
