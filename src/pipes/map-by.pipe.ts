@@ -4,7 +4,10 @@
  */
 import { Pipe, PipeTransform } from "@angular/core";
 import { isArray, isFunction, isObject } from "util";
-@Pipe({name: 'mapBy'})
+@Pipe({
+  name: 'mapBy',
+  pure: false
+})
 export class MapByPipe implements PipeTransform {
   transform(value: any, fn: (o: any) => any): any {
     if (!isFunction(fn))return value;

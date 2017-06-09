@@ -4,7 +4,10 @@
  */
 import { Pipe, PipeTransform } from "@angular/core";
 import { isArray, isFunction, isObject } from "util";
-@Pipe({name: 'filterBy'})
+@Pipe({
+  name: 'filterBy',
+  pure: false
+})
 export class FilterByPipe implements PipeTransform {
   transform(value: any, fn: ((o: any) => any) | any): any {
 
