@@ -53,7 +53,7 @@ export class OrderByPipe implements PipeTransform {
     let lastPredicate = parsedExpression.pop();
     let oldValue = OrderByPipe.getValue(value, parsedExpression);
 
-    if (!(oldValue instanceof Array)) {
+    if (!isArray(oldValue)) {
       parsedExpression.push(lastPredicate);
       lastPredicate = null;
       oldValue = OrderByPipe.getValue(value, parsedExpression);

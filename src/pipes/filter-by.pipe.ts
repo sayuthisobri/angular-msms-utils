@@ -9,7 +9,7 @@ export class FilterByPipe implements PipeTransform {
   transform(value: any, fn: ((o: any) => any) | any): any {
 
     if (isFunction(fn)) {
-      if (isArray(value)) return value.slice(0).filter(fn);
+      if (isArray(value)) return value.filter(fn);
     }
     if (isObject(fn)) {
       const map = (o) => {
@@ -21,7 +21,7 @@ export class FilterByPipe implements PipeTransform {
         }
         return o1;
       };
-      if (isArray(value)) return value.slice(0).map(map);
+      if (isArray(value)) return value.map(map);
       if (isObject(value)) return map(value);
     }
     return value;

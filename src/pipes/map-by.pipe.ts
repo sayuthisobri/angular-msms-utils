@@ -9,7 +9,7 @@ export class MapByPipe implements PipeTransform {
   transform(value: any, fn: (o: any) => any): any {
     if (!isFunction(fn))return value;
     if (isArray(value)) {
-      return value.slice(0).map(fn);
+      return value.map(fn);
     }
     if (isObject(value)) value = Object.assign({}, value);
     return fn(value);
