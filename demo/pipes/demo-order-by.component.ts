@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: 'demoOrderBy',
   template: `
-    <pre>... someList | orderBy:expression:[isOverwrite] ...</pre>
+    <pre>... someList | orderBy:expression:[clone] ...</pre>
     <table class="table table-bordered">
       <tr>
         <th>Original</th>
@@ -21,7 +21,7 @@ import { Component } from "@angular/core";
           <pre>{{o.expression}}</pre>
         </td>
         <td>
-          <pre>{{o.list | orderBy:o.expression | json}}</pre>
+          <pre>{{o.list | orderBy:o.expression:true | json}}</pre>
         </td>
       </tr>
     </table>

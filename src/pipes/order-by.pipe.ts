@@ -7,16 +7,16 @@ import { isArray, isObject, isString } from "util";
 })
 export class OrderByPipe implements PipeTransform {
 
-  transform(value: any | any[], expression?: any, overwrite?: boolean, reverse?: boolean): any {
+  transform(value: any | any[], expression?: any, clone?: boolean, reverse?: boolean): any {
     if (isString(expression)) {
       if (expression.indexOf('-') == 0) reverse = true;
       expression = expression.replace(/[-+]/g, '');
     }
     if (!value) return value;
     if (isArray(value))
-      return this.sortArray(value, expression, overwrite, reverse);
+      return this.sortArray(value, expression, clone, reverse);
     if (isObject(value))
-      return this.transformObject(value, expression, overwrite, reverse);
+      return this.transformObject(value, expression, clone, reverse);
     return value;
   }
 
@@ -25,12 +25,12 @@ export class OrderByPipe implements PipeTransform {
    *
    * @param value
    * @param expression
-   * @param overwrite
+   * @param clone
    * @param reverse
    * @returns {any[]}
    */
-  private sortArray(value: any[], expression?: any, overwrite?: boolean, reverse?: boolean): any[] {
-    if (!overwrite) value = value.slice(0); //only touch original value if overwrite is set
+  private sortArray(value: any[], expression?: any, clone?: boolean, reverse?: boolean): any[] {
+    if (clone) value = value.slice(0); //only touch original value if clone is set
     let array: any[] = value.sort((a: any, b: any): number => {
       if (!expression) return a > b ? 1 : -1;
       return OrderByPipe.parseValue(a, expression) > OrderByPipe.parseValue(b, expression) ? 1 : -1;
@@ -45,11 +45,11 @@ export class OrderByPipe implements PipeTransform {
    *
    * @param value
    * @param expression
-   * @param overwrite
+   * @param clone
    * @param reverse
    * @returns {any[]}
    */
-  private transformObject(value: any | any[], expression?: any, overwrite?: boolean, reverse?: boolean): any {
+  private transformObject(value: any | any[], expression?: any, clone?: boolean, reverse?: boolean): any {
     let parsedExpression = OrderByPipe.parseExpression(expression);
     let lastPredicate = parsedExpression.pop();
     let oldValue = OrderByPipe.getValue(value, parsedExpression);
@@ -64,7 +64,7 @@ export class OrderByPipe implements PipeTransform {
       return value;
     }
 
-    const newValue = this.transform(oldValue, lastPredicate, overwrite, reverse);
+    const newValue = this.transform(oldValue, lastPredicate, clone, reverse);
     OrderByPipe.setValue(value, newValue, parsedExpression);
     return value;
   }
