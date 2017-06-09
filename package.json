@@ -1,7 +1,7 @@
 {
   "name": "angular-msms-utils",
   "version": "0.0.5",
-  "description": "msms",
+  "description": "msms utils",
   "main": "./bundles/angular-msms-utils.umd.js",
   "module": "./index.js",
   "typings": "./index.d.ts",
