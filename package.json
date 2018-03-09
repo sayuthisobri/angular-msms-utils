@@ -90,7 +90,7 @@
     "sinon": "^2.3.2",
     "sinon-chai": "^2.8.0",
     "standard-version": "^4.0.0",
-    "style-loader": "^0.19.0",
+    "style-loader": "^0.20.3",
     "to-string-loader": "^1.1.5",
     "ts-node": "^3.0.4",
     "tslint": "^5.4.2",
