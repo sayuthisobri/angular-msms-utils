@@ -87,7 +87,7 @@
     "raw-loader": "^0.5.1",
     "rxjs": "^5.0.1",
     "sass-loader": "^6.0.3",
-    "sinon": "^2.3.2",
+    "sinon": "^4.4.5",
     "sinon-chai": "^2.8.0",
     "standard-version": "^4.0.0",
     "style-loader": "^0.19.0",
