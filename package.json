@@ -100,7 +100,7 @@
     "webpack": "^2.2.0",
     "webpack-angular-externals": "^1.0.0",
     "webpack-dev-server": "^2.2.0",
-    "webpack-rxjs-externals": "^1.0.0",
+    "webpack-rxjs-externals": "^2.0.0",
     "zone.js": "^0.8.11"
   },
   "peerDependencies": {
