@@ -68,7 +68,7 @@
     "commitizen": "^2.8.1",
     "compodoc": "^0.0.41",
     "concurrently": "^3.0.0",
-    "conventional-changelog": "^1.1.0",
+    "conventional-changelog": "^3.0.2",
     "conventional-changelog-cli": "^1.2.0",
     "core-js": "^2.4.1",
     "css-loader": "^0.28.4",
