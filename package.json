@@ -54,7 +54,7 @@
     "@angular/platform-browser-dynamic": "^4.1.3",
     "@types/chai": "^4.0.0",
     "@types/core-js": "^0.9.37",
-    "@types/es6-shim": "^0.31.32",
+    "@types/es6-shim": "^0.31.40",
     "@types/jasmine": "2.5.51",
     "@types/node": "^7.0.0",
     "@types/sinon": "^2.3.1",
